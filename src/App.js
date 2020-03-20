@@ -1,25 +1,40 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+
+import "./App.css";
+import Navbar from "./componets/NavBar/Navbar";
+import Lista from "./componets/BodyElemets/Lista";
+import Add from "./componets/BodyElemets/Add";
+import CreateAcc from "./componets/BodyElemets/CreateAcc";
+import Login from "./componets/BodyElemets/Login";
+import Forgot from "./componets/BodyElemets/Forgot";
+import Edit from "./componets/BodyElemets/Edit";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Navbar />
+        <Switch>
+          <Route exact path="/" component={Lista} />
+          <Route path="/add">
+            <Add />
+          </Route>
+          <Route path="/create_acc">
+            <CreateAcc />
+          </Route>
+          <Route path="/login">
+            <Login />
+          </Route>
+          <Route path="/forgot">
+            <Forgot />
+          </Route>
+          <Route path="/edit/:id">
+            <Edit />
+          </Route>
+        </Switch>
+      </div>
+    </BrowserRouter>
   );
 }
 
