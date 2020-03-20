@@ -1,14 +1,20 @@
 This project dont have any validation its only to see how react works and how to incorporate Firebase.
 You can implement validations in the forms if you want.
-
+<br />
+<hr />
 :) 
-Hooks i use : 
-  1-useState
-  2-useEffect
-  3-useHistory(To navigate between Tabs )
-  4-useParams (to recover variables from the url)
-  5-useRef (to get an input or another html value)
+<br />
+<hr />
 
+Hooks i use : 
+<br />
+  1-useState<br />
+  2-useEffect<br />
+  3-useHistory(To navigate between Tabs )<br />
+  4-useParams (to recover variables from the url)<br />
+  5-useRef (to get an input or another html value)<br />
+<br />
+<hr />
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
